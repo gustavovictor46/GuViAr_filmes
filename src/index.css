@@ -1,15 +1,18 @@
 :root {
-  --fundo: #f5f7fd;
-  --texto: #1f2937;
-  --texto-claro: #4b5563;
-  --cor-branco: #ffffff;
-  --borda: #d1d5db;
-  --accento: #3b82f6;
-  --accento-escuro: #2563eb;
-  --sombra: 0 24px 80px rgba(15, 23, 42, 0.08);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fundo: #0b0712;
+  --fundo-alt: #0f0919;
+  --texto: #e5f4ff;
+  --texto-claro: #a1b0c3;
+  --neon: #7c3aed;
+  --neon-frio: #00d1ff;
+  --sombra: 0 0 40px rgba(124, 58, 237, 0.18);
+  --borda: rgba(255, 255, 255, 0.12);
+  --grid: rgba(124, 58, 237, 0.05);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
   color: var(--texto);
-  background: var(--fundo);
+  background: radial-gradient(circle at top left, rgba(124, 58, 237, 0.15), transparent 25%),
+    radial-gradient(circle at right, rgba(0, 209, 255, 0.12), transparent 18%),
+    linear-gradient(180deg, #0b0712 0%, #0f0919 100%);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -26,7 +29,7 @@ body,
 }
 
 body {
-  background: var(--fundo);
+  background-attachment: fixed;
 }
 
 a {
@@ -51,17 +54,7 @@ p {
   color: var(--texto-claro);
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+::selection {
+  background: rgba(124, 58, 237, 0.35);
+  color: #f8fafc;
 }
